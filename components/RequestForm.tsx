@@ -95,17 +95,17 @@ export default function RequestForm({ onClose }: RequestFormProps) {
             </div>
           </div>
 
-          <div className="mt-6 flex items-center justify-end gap-8 p-8">
+          <div className="mt-6 flex items-center justify-end gap-4 p-8">
             <button
               type="button"
-              className="text-sm/6 font-semibold text-gray-900 border border-gray-300 px-4 py-2 rounded-md "
+              className="text-sm font-semibold text-gray-900 border border-gray-300 px-4 py-2 rounded-md "
               onClick={onClose}
             >
               Cancel
             </button>
             <button
               type="submit"
-              className="rounded-md bg-black px-4 py-2 text-sm font-semibold text-white shadow-xs hover:bg-gray-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              className="rounded-md bg-black px-4 py-2 text-sm font-semibold text-white shadow-xs hover:bg-gray-800"
             >
               {isLoading ? "Loading" : "Send"}
             </button>
